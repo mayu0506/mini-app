@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## blogsテーブル
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|text|text|
+|user|references|null: false, foreign_key: true|
 
-* Ruby version
+### Association
+- belongs_to :user
 
-* System dependencies
+## usersテーブル
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|text|null: false|
+|encrypted_password|null: false|
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- has_many :blogs
