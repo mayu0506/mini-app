@@ -1,0 +1,7 @@
+<div class="contents row">
+  <% @blogs.each do |blog| %>
+    <div class="content_post">
+      <%= simple_format(blog.text) %>
+    </div>
+  <% end %>
+</div>
