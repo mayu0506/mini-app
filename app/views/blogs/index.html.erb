@@ -1,7 +1,8 @@
-<div class="contents row">
-  <% @blogs.each do |blog| %>
-    <div class="content_post">
-      <%= simple_format(blog.text) %>
-    </div>
-  <% end %>
+<div class="contents">
+    <% @blogs.each do |blog| %>
+      <div class="content_post">
+        <%= simple_format(blog.text) %>
+      </div>
+    <% end %>
+  <%= paginate(@blogs) %>
 </div>

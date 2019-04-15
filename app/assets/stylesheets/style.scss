@@ -14,10 +14,15 @@ html{
   position: relative;
 }
 
-.contents_row{
+.contents{
   width: 700px;
   height: 500px;
   margin: 0 auto;
+}
+
+.btn{
+  background-color: #ff7d6e;
+  color: white;
 }
 
 .input_box{
@@ -46,4 +51,8 @@ html{
   width: 80px;
   text-align: right;
   list-style: none;
+}
+
+.pagination{
+  text-align: center;
 }
