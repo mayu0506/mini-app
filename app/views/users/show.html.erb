@@ -1,8 +1,13 @@
-<div class="contents_row" >
+<div class="contents" >
     <p><%= @nickname %>さんの投稿一覧</p>
     <% @blogs.each do |blog| %>
       <div class="content_post" >
         <%= simple_format(blog.text) %>
+        <span class="name">
+          <a href="">
+            <span>投稿者</span><%= blog.user.nickname %>
+          </a>
+        </span>
       </div>
     <% end %>
     <%= paginate(@blogs) %>
