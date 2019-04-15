@@ -3,10 +3,10 @@
       <div class="more">
         <ul class="more_list">
           <li class="box1">
-            <%= link_to '編集', "/blogs/#{blog.id}/edit", method: :get %>
+            <%= link_to '編集', "/blogs/#{blog.id}/edit",style: "color:white;", method: :get %>
           </li>
           <li class="box2">
-            <%= link_to '削除', "/blogs/#{blog.id}", method: :delete %>
+            <%= link_to '削除', "/blogs/#{blog.id}", style: "color:white;", method: :delete %>
           </li>
         </ul>
       </div>
@@ -14,7 +14,7 @@
     <%= simple_format(blog.text) %>
     <span class="name">
       <a href="">
-        <span>投稿者</span><%= blog.user.nickname %>
+        <span>投稿者</span><%= blog.user.nickname%>
       </a>
     </span>
 </div>
