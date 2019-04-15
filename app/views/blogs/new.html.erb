@@ -1,5 +1,5 @@
 <div class="contents_row">
-  <%= form_tag('/blogs', method: :post) do %>
+  <%= form_with(url:blogs_path, local:true) do |form| %>
     <h3>
       投稿する
     </h3>
