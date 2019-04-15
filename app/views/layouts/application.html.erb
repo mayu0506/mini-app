@@ -27,8 +27,11 @@
       <a href="/blogs" class="brand-logo">Blog</a>
       <% if user_signed_in? %>
        <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %>ログアウト</li>
-        <li><a href="/blogs/new">投稿する</a></li>
+        <span><%= current_user.nickname %>
+            <li><a href="/users/<%= current_user.id%>">マイページ</a></li>
+            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %>ログアウト</li>
+            <li><a href="/blogs/new">投稿する</a></li>
+        </span>
       <% else %>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/users/sign_in">サインイン</a></li>
