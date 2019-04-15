@@ -14,6 +14,8 @@
     <%= simple_format(blog.text) %>
     <span class="name">
         <span>投稿者 :</span><%= blog.user.nickname%>
-      </a>
+    </span>
+    <span class="date">
+        <span>投稿日 :</span><%= blog.updated_at%>
     </span>
 </div>
