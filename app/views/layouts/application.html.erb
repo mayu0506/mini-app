@@ -24,11 +24,17 @@
   <body>
     <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Blog</a>
+      <a href="/blogs" class="brand-logo">Blog</a>
+      <% if user_signed_in? %>
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %>ログアウト</li>
+        <li><a href="/blogs/new">投稿する</a></li>
+      <% else %>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">サインイン</a></li>
-        <li><a href="badges.html">新規登録</a></li>
+        <li><a href="/users/sign_in">サインイン</a></li>
+        <li><a href="/users/sign_up">新規登録</a></li>
       </ul>
+      <% end %>
     </div>
     </nav>
 
