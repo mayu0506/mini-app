@@ -15,6 +15,7 @@
       </div>
     <% end %>
     <%= simple_format(blog.text) %>
+    <span><%= image_tag 'arrow_top.png' %></span>
     <span class="name">
         <span>投稿者 :</span><%= blog.user.nickname%>
     </span>
