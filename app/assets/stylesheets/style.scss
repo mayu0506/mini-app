@@ -12,6 +12,7 @@ html{
   border-top: solid 10px #ff7d6e;
   width: 500px;
   position: relative;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contents{
@@ -85,11 +86,35 @@ input{
 .more_list{
   float: right;
   text-align: center;
-  width: 50px;
-  background-color: #ff7d6e;
   color: #ffebe9;
 }
 
 .name{
   color: #ff7d6e;
+}
+
+.edit_box{
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.box1{
+  display: inline-block;
+  text-decoration: none;
+  background: #ff7d6e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  padding: 0.2em;
+}
+
+.box2{
+  display: inline-block;
+  text-decoration: none;
+  background: #ff7d6e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  padding: 0.2em;
 }
