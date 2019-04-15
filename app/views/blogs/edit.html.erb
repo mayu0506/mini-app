@@ -1,5 +1,5 @@
 <div class="contents_row">
-    <%= form_tag("/blogs/#{@blog.id}", method: :patch ) do %>
+    <%= form_with( url:"/blogs/#{@blog.id}", method: :patch, local:true ) do |form| %>
       <h3>
         編集する
       </h3>
